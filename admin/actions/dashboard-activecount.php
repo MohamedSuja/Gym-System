@@ -1,18 +1,20 @@
 <?php
 
-$servername="localhost";
-$uname="root";
-$pass="";
-$db="gymnsb";
+$host = "bjasjyd2yjfbkaw4vruc-mysql.services.clever-cloud.com";
+$db = "bjasjyd2yjfbkaw4vruc";
+$user = "uhzwhhjq9hcftbyx";
+$password = "XVviTUQiTpwZVfAY4Q2p";
+$port = "3306";
 
-$conn=mysqli_connect($servername,$uname,$pass,$db);
+// Create connection
+$con = new mysqli($host, $user, $password, $db, $port);
 
-if(!$conn){
+if(!$con){
     die("Connection Failed");
 }
 
 $sql = "SELECT * FROM members WHERE status ='Active'";
-                $query = $conn->query($sql);
+                $query = $con->query($sql);
 
                 echo "$query->num_rows";
 ?>

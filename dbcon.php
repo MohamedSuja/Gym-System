@@ -6,7 +6,7 @@ $password = "XVviTUQiTpwZVfAY4Q2p";
 $port = "3306";
 
 // Create connection
-$conn = new mysqli($host, $user, $password, $db, $port);
+$con = new mysqli($host, $user, $password, $db, $port);
 
 // Check connection
 if (mysqli_connect_errno())

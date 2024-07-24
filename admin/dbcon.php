@@ -1,5 +1,12 @@
 <?php
-$con = mysqli_connect("localhost","root","","gymnsb");
+$host = "bjasjyd2yjfbkaw4vruc-mysql.services.clever-cloud.com";
+$db = "bjasjyd2yjfbkaw4vruc";
+$user = "uhzwhhjq9hcftbyx";
+$password = "XVviTUQiTpwZVfAY4Q2p";
+$port = "3306";
+
+// Create connection
+$con = new mysqli($host, $user, $password, $db, $port);
 
 // Check connection
 if (mysqli_connect_errno())

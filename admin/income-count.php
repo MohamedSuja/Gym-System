@@ -1,18 +1,20 @@
 <?php
 
-$servername="localhost";
-$uname="root";
-$pass="";
-$db="gymnsb";
+$host = "bjasjyd2yjfbkaw4vruc-mysql.services.clever-cloud.com";
+$db = "bjasjyd2yjfbkaw4vruc";
+$user = "uhzwhhjq9hcftbyx";
+$password = "XVviTUQiTpwZVfAY4Q2p";
+$port = "3306";
 
-$conn=mysqli_connect($servername,$uname,$pass,$db);
+// Create connection
+$con = new mysqli($host, $user, $password, $db, $port);
 
-if(!$conn){
+if(!$con){
     die("Connection Failed");
 }
 
 $sql = "SELECT SUM( amount) FROM members";
-        $amountsum = mysqli_query($conn, $sql) or die(mysqli_error($sql));
+        $amountsum = mysqli_query($con, $sql) or die(mysqli_error($sql));
         $row_amountsum = mysqli_fetch_assoc($amountsum);
         $totalRows_amountsum = mysqli_num_rows($amountsum);
         echo $row_amountsum['SUM( amount)'];
