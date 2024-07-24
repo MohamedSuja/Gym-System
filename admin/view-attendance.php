@@ -71,7 +71,7 @@ header('location:../index.php');
                 </tr>
               </thead>
 
-             <?php include "dbcon.php";
+             <?php   include "../dbcon.php";
               
                      $qry="SELECT * FROM members WHERE status = 'Active'";
                     $result=mysqli_query($con,$qry);

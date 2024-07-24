@@ -44,7 +44,7 @@ header('location:../index.php');
 
 <!--sidebar-menu-->
     <?php
-        include 'dbcon.php';
+        include '../../dbcon.php';;
         $id=$_GET['id'];
         $qry= "select * from equipment where id='$id'";
         $result=mysqli_query($con,$qry);

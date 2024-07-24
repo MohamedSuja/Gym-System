@@ -68,7 +68,7 @@ header('location:../index.php');
 	  
           <?php
 
-include "dbcon.php";
+  include "../../dbcon.php";
 $qry="SELECT * FROM members";
 $cnt = 1;
   $result=mysqli_query($con,$qry);

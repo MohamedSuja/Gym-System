@@ -70,7 +70,7 @@ header('location:../index.php');
 	  <!-- Visit codeastro.com for more projects -->
 	  <?php
 
-      include "dbcon.php";
+      include "../dbcon.php";
       $search=$_POST['search'];
       $cnt = 1;
       $qry="select * from members where fullname like '%$search%' or username like '%$search%'";

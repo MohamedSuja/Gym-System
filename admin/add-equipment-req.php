@@ -65,7 +65,7 @@ $contact = $_POST["contact"];
 
 $totalamount = $amount * $quantity;
 
-include 'dbcon.php';
+include '../dbcon.php';;
 //code after connection is successfull
 $qry = "insert into equipment(name,description,amount,vendor,address,contact,date,quantity) values ('$name','$description','$totalamount','$vendor','$address','$contact','$date','$quantity')";
 $result = mysqli_query($con,$qry); //query executes

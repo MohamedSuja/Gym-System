@@ -56,7 +56,7 @@ if(isset($_POST['message'])){
 $message = $_POST["message"];    
 $date = $_POST["date"];
 
-include 'dbcon.php';
+include '../dbcon.php';;
 //code after connection is successfull
 $qry = "insert into announcements(message,date) values ('$message','$date')";
 $result = mysqli_query($con,$qry); //query executes

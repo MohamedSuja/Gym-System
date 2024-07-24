@@ -4,7 +4,7 @@ session_start();
 if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
-include "dbcon.php";
+include "../dbcon.php";
 $qry="SELECT services, count(*) as number FROM members GROUP BY services";
 $result=mysqli_query($con,$qry);
 $qry="SELECT gender, count(*) as enumber FROM members GROUP BY gender";
@@ -352,7 +352,7 @@ $result5=mysqli_query($con,$qry);
 
               <?php
 
-                include "dbcon.php";
+                include "../dbcon.php";
                 $qry="SELECT * FROM announcements";
                 $result=mysqli_query($con,$qry);
                   
@@ -387,7 +387,7 @@ $result5=mysqli_query($con,$qry);
               <ul>
               <?php
 
-                include "dbcon.php";
+                include "../dbcon.php";
                 $qry="SELECT * FROM todo";
                 $result=mysqli_query($con,$qry);
 

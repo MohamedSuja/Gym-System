@@ -62,7 +62,7 @@ header('location:../index.php');
 	  
 	  <?php
 
-      include "dbcon.php";
+      include "../dbcon.php";
      
 
         

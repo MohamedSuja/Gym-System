@@ -66,7 +66,7 @@
 
             $totalamount = $amount * $quantity;
             
-            include 'dbcon.php';
+            include '../dbcon.php';;
             //code after connection is successfull
             //update query
             $qry = "update equipment set name='$name', amount='$totalamount',vendor='$vendor', description='$description', address='$address', address='$address', contact='$contact', date='$date', quantity='$quantity' where id='$id'";

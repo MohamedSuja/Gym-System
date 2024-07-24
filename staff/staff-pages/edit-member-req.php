@@ -66,7 +66,7 @@ header('location:../index.php');
             $contact = $_POST["contact"];
             $id = $_POST["id"];
             
-            include 'dbcon.php';
+            include '../../dbcon.php';;
             //code after connection is successfull
             //update query
             $qry = "update members set fullname='$fullname', username='$username',dor='$dor', gender='$gender', services='$services', amount='$amount', plan='$plan', address='$address', contact='$contact' where user_id='$id'";

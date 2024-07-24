@@ -119,7 +119,7 @@ header('location:../index.php');
 
               <?php
 
-                include "dbcon.php";
+                include "../../dbcon.php";
                 $qry="select * from announcements";
                   $result=mysqli_query($con,$qry);
                   
@@ -154,7 +154,7 @@ header('location:../index.php');
               <ul>
               <?php
 
-                include "dbcon.php";
+                include "../../dbcon.php";
                 $qry="SELECT * FROM todo";
                 $result=mysqli_query($con,$qry);
 

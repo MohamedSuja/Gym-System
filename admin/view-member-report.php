@@ -55,7 +55,7 @@ header('location:../index.php');
       <div class="span12">
 	          <div class="widget-box">
       <?php
-            include 'dbcon.php';
+            include '../dbcon.php';;
             $id=$_GET['id'];
             $qry= "select * from members where user_id='$id'";
             $result=mysqli_query($con,$qry);

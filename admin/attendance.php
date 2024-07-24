@@ -72,7 +72,7 @@ header('location:../index.php');
                 </tr>
               </thead>
 
-             <?php include "dbcon.php";
+             <?php   include "../dbcon.php";
               date_default_timezone_set('Asia/Kathmandu');
               //$current_date = date('Y-m-d h:i:s');
                  $current_date = date('Y-m-d h:i A');
