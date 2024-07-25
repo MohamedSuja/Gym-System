@@ -1,16 +1,32 @@
 <?php
-$host = "bjasjyd2yjfbkaw4vruc-mysql.services.clever-cloud.com";
-$db = "bjasjyd2yjfbkaw4vruc";
-$user = "uhzwhhjq9hcftbyx";
-$password = "XVviTUQiTpwZVfAY4Q2p";
-$port = "3306";
+/* $servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "gymnsb";
+$socket = "/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock";
+
+
+$con = new mysqli($host, $user, $password, $db, $port); */
+
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "gymnsb";
+$socket = "/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock";
+
 
 // Create connection
-$con = new mysqli($host, $user, $password, $db, $port);
+$conn = new mysqli($servername, $username, $password, $dbname, null, $socket);
 
 // Check connection
 if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }else{
+    echo "Connected";
   }
+  
+
+
 ?><!-- Visit codeastro.com for more projects -->
